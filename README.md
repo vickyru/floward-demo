@@ -64,7 +64,7 @@ Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) an
 
 ```bash
 # Clone this project
-$ git clone https://github.com/vickyru/floward_automation
+$ git clone git@github.com:vickyru/floward-demo.git
 
 # Access
 $ cd floward_automation
