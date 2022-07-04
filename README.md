@@ -5,22 +5,22 @@
   <!-- <a href="https://floward_automation.netlify.app">Demo</a> -->
 </div>
 
-<h1 align="center">Floward_automation</h1>
+<h1 align="center">Floward Automation</h1>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/{{vickyru}}/floward_automation?color=56BEB8">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/vickyru/floward_automation?color=56BEB8">
 
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/{{vickyru}}/floward_automation?color=56BEB8">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/vickyru/floward_automation?color=56BEB8">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/{{vickyru}}/floward_automation?color=56BEB8">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/vickyru/floward_automation?color=56BEB8">
 
-  <img alt="License" src="https://img.shields.io/github/license/{{vickyru}}/floward_automation?color=56BEB8">
+  <img alt="License" src="https://img.shields.io/github/license/vickyru/floward_automation?color=56BEB8">
 
-  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/{{vickyru}}/floward_automation?color=56BEB8" /> -->
+  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/vickyru/floward_automation?color=56BEB8" /> -->
 
-  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/{{vickyru}}/floward_automation?color=56BEB8" /> -->
+  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/vickyru/floward_automation?color=56BEB8" /> -->
 
-  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/{{vickyru}}/floward_automation?color=56BEB8" /> -->
+  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/vickyru/floward_automation?color=56BEB8" /> -->
 </p>
 
 <!-- Status -->
@@ -38,14 +38,14 @@
   <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
   <a href="#memo-license">License</a> &#xa0; | &#xa0;
-  <a href="https://github.com/{{vickyru}}" target="_blank">Author</a>
+  <a href="https://github.com/vickyru" target="_blank">Author</a>
 </p>
 
 <br>
 
 ## :dart: About ##
 
-Describe your project
+This Cypress project is created to demo the Floward E-Commerce website.
 
 ## :sparkles: Features ##
 
@@ -57,11 +57,10 @@ Describe your project
 
 The following tools were used in this project:
 
-- [Expo](https://expo.io/)
-- [Node.js](https://nodejs.org/en/)
-- [React](https://pt-br.reactjs.org/)
-- [React Native](https://reactnative.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
+- [Cypress](https://www.cypress.io/)
+- [MochaJS](https://mochajs.org/)
+- [Mochawesome](https://www.npmjs.com/package/cypress-mochawesome-reporter)
+- [Azure DevOps](https://dev.azure.com/)
 
 ## :white_check_mark: Requirements ##
 
@@ -71,18 +70,16 @@ Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) an
 
 ```bash
 # Clone this project
-$ git clone https://github.com/{{vickyru}}/floward_automation
+$ git clone https://github.com/vickyru/floward_automation
 
 # Access
 $ cd floward_automation
 
 # Install dependencies
-$ yarn
+$ npm install
 
 # Run the project
-$ yarn start
-
-# The server will initialize in the <http://localhost:3000>
+$ npx cypress run
 ```
 
 ## :memo: License ##
@@ -90,7 +87,7 @@ $ yarn start
 This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
 
 
-Made with :heart: by <a href="https://github.com/{{vickyru}}" target="_blank">{{YOUR_NAME}}</a>
+Made with :heart: by <a href="https://github.com/vickyru" target="_blank">Prashant Kumar tiwari</a>
 
 &#xa0;
 
