@@ -4,6 +4,7 @@
   "description": "Floward e-commerce website automation",
   "main": "index.js",
   "scripts": {
+    "test":"cypress run --spec cypress/e2e/floward/*.cy.js --browser chrome"
   },
   "author": "Prashant",
   "license": "ISC",
