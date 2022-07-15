@@ -4,11 +4,16 @@
   "description": "Floward e-commerce website automation",
   "main": "index.js",
   "scripts": {
-    "test":"cypress run --spec cypress/e2e/floward/*.cy.js --browser chrome"
+    "test": "cypress run --spec cypress/e2e/floward/*.cy.js --browser chrome",        
+    "allure:report": "allure generate cypress/results/allure-results --clean -o cypress/results/allure-reports",
+    "allure:clear": "rm -r cypress/results/allure-results/ cypress/results/allure-reports cypress/screenshots || true",
+    "allure:history": "mv -f cypress/results/allure-reports/history cypress/results/allure-results/history && rm -r cypress/results/allure-reports || true"
   },
   "author": "Prashant",
   "license": "ISC",
   "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.28.0",
+    "allure-commandline": "^2.18.1",
     "cypress": "^10.3.0",
     "cypress-mochawesome-reporter": "^3.2.0"
   },

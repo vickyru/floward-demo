@@ -1,4 +1,5 @@
 const { defineConfig } = require("cypress");
+const AllureWriter = require('@shelex/cypress-allure-plugin/writer');
 
 module.exports = defineConfig({
   // reporter: 'cypress-mochawesome-reporter',
@@ -9,15 +10,17 @@ module.exports = defineConfig({
   //   inlineAssets: true,
   //   saveAllAttempts: false
   //   },
-  "reporter": "junit",
-  "reporterOptions": {
-     "mochaFile": "cypress/results/results.xml",
-     "toConsole": true,
-  },
+
+  // Junit reporter
+  // "reporter": "junit",
+  // "reporterOptions": {
+  //    "mochaFile": "cypress/results/results.xml",
+  //    "toConsole": true,
+  // },
   e2e: {
     setupNodeEvents(on, config) {
-      // implement node event listeners here
-      // require('cypress-mochawesome-reporter/plugin')(on);
-    },
-  },
+        AllureWriter(on, config);
+        return config;
+    }
+},
 });
