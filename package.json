@@ -4,7 +4,10 @@
   "description": "Floward e-commerce website automation",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run --spec cypress/e2e/floward/*.cy.js --browser chrome",        
+    "test": "cypress run --spec cypress/e2e/floward/*.cy.js --browser chrome --headed",
+    "test:chrome":"cypress run --spec cypress/e2e/floward/*.cy.js --browser chrome --headed",
+    "test:firefox":"cypress run --spec cypress/e2e/floward/*.cy.js --browser firefox,chrome",
+    "test:all:browser":"cypress run --spec cypress/e2e/floward/*.cy.js --browser chrome,firefox --headed",          
     "allure:report": "allure generate cypress/results/allure-results --clean -o cypress/results/allure-reports",
     "allure:clear": "rm -r cypress/results/allure-results/ cypress/results/allure-reports cypress/screenshots || true",
     "allure:history": "mv -f cypress/results/allure-reports/history cypress/results/allure-results/history && rm -r cypress/results/allure-reports || true"
